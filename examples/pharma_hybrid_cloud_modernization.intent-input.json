@@ -1,0 +1,81 @@
+{
+  "project_profile": {
+    "project_name": "APAC GMP Workload Hybrid Cloud Modernization",
+    "project_type": "cloud",
+    "delivery_mode": "hybrid",
+    "start_date": "2026-03-02",
+    "target_end_date": "2026-10-30"
+  },
+  "objectives_and_deliverables": {
+    "primary_objectives": [
+      "Migrate validated GMP analytics workloads to a hybrid cloud landing zone with controlled downtime",
+      "Improve operational resilience and reduce recovery time for critical batch-release reporting",
+      "Enable standardized operational handover to customer IT operations"
+    ],
+    "key_deliverables": [
+      "HLD",
+      "LLD",
+      "Validation Traceability Matrix",
+      "Cutover Plan",
+      "Rollback Plan",
+      "Test Report",
+      "As-built",
+      "Runbook"
+    ]
+  },
+  "hard_constraints": {
+    "constraints": {
+      "compliance": [
+        "GxP",
+        "Change Control",
+        "Data Integrity"
+      ],
+      "cutover_required": true,
+      "cutover_window_hours": 2,
+      "blackout_dates": [
+        "2026-05-01",
+        "2026-10-01",
+        "2026-10-02"
+      ],
+      "downtime_tolerance": "low"
+    }
+  },
+  "complexity_assessment": {
+    "technical_complexity": "high",
+    "stakeholder_complexity": "high",
+    "delivery_risk": "high"
+  },
+  "roles_model": {
+    "roles": {
+      "delivery_roles": [
+        "PM",
+        "Technical Lead",
+        "Cloud Engineer",
+        "Validation QA",
+        "Automation Engineer",
+        "Vendor"
+      ],
+      "approval_roles": [
+        "Customer IT",
+        "Quality",
+        "Security",
+        "Business System Owner"
+      ]
+    }
+  },
+  "governance_preferences": {
+    "require_stage_gate": true,
+    "require_formal_signoff": true,
+    "documentation_level": "heavy"
+  },
+  "risk_factors": [
+    "cross_vendor_dependency",
+    "legacy_system_integration",
+    "limited_cutover_window",
+    "data_integrity_sensitive"
+  ],
+  "estimation_preferences": {
+    "estimation_mode": "conservative",
+    "working_days_per_week": 5
+  }
+}
